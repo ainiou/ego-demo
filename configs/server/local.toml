@@ -1,0 +1,27 @@
+[Server]
+ServerDesc = ""
+ServerIp = ""
+ServerName = "ego-demo"
+ServerPort = "8080"
+
+
+
+
+
+[logger]
+[logger.default]
+CallerSkip = 2
+EnableAddCaller = true
+level = "debug"
+writer = "stdout"
+[logger.ego]
+writer = "stdout"
+
+[registry]
+prefix = "test"
+scheme = "etcd"
+
+[server]
+[server.http]
+Mode = "debug"
+port = 8080
